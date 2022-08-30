@@ -10,7 +10,12 @@ export default function Home() {
       </Head>
       <section className={styles.portraitGrid}>
         <div className={styles.portraitImage}>
-          <div className={styles.portraitImageInner}></div>
+          <div
+            className={styles.portraitImageInner}
+            style={{
+              backgroundImage: "url(/img/me.webp)",
+            }}
+          ></div>
         </div>
         <div className={styles.portraitData}>
           <div className={styles.portraitDataInner}>
@@ -30,18 +35,55 @@ export default function Home() {
                 One Page Love. It runs completely on Notion.
               </p>
             </div>
-            <div className={styles.connectWrapper}>
-              <div className={styles.connect}>
-                <p className={styles.title}>Conecta</p>
-                <a href="https://juanberrios.com/blog">Blog</a>
-                <a href="mailto:hola@juanberrios.com">Email</a>
-                <a href="?">Newsletter</a>
-              </div>
-              <div className={styles.social}>
-                <p className={styles.title}>Social</p>
-                <a href="https://juanberrios.com/blog">Twitter</a>
-                <a href="mailto:hola@juanberrios.com">Instagram</a>
-                <a href="?">VSCO</a>
+            <div className={styles.connect}>
+              <p className={styles.title}>Conecta</p>
+              <div className={styles.connectWrapper}>
+                <div className={styles.links}>
+                  <div className={styles.link}>
+                    <a href="mailto:hola@juanberrios.com">Email</a>
+                  </div>
+                  <div className={styles.link}>
+                    <a
+                      href="https://twitter.com/dandelior"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Twitter
+                    </a>
+                  </div>
+                  <div className={styles.link}>
+                    <a
+                      href="https://github.com/dandelior"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      GitHub
+                    </a>
+                  </div>
+                </div>
+                <div className={styles.links}>
+                  <div className={`${styles.link} ${styles.soon}`}>
+                    <a href="#">Blog</a>
+                  </div>
+                  <div className={styles.link}>
+                    <a
+                      href="https://instagram.com/bydandelior"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Instagram
+                    </a>
+                  </div>
+                  <div className={styles.link}>
+                    <a
+                      href="https://vsco.co/dandelior"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      VSCO
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
